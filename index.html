@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <title>CRIQL - Colegio Regional de Ingenieros Químicos del Litoral</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
@@ -13,17 +14,12 @@
 <body>
   <header class="slider">
     <div class="slider-heading">
-      <div style="
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            flex-direction: column;
-          ">
+      <div style="display: flex; align-items: center; gap: 1rem; flex-direction: column;">
         <img src="imagen/images-s (1).png" alt="Logo CRIQL" class="logo" />
         <h1>CRIQL - Colegio Regional de Ingenieros Químicos del Litoral</h1>
-        <h2 style="color: white; font-size: 1.5rem; margin-top: 1rem">
+        <p style="color: white; font-size: 1.5rem; margin-top: 1rem; font-weight: 600;">
           ¡Bienvenidos a nuestra página web!
-        </h2>
+        </p>
       </div>
     </div>
 
@@ -248,9 +244,9 @@
   <section id="formulario">
     <h2>Formulario de contacto</h2>
     <form>
-      <input type="text" placeholder="Nombre completo" required />
-      <input type="email" placeholder="Correo electrónico" required />
-      <textarea rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+      <input type="text" placeholder="Nombre completo" aria-label="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" aria-label="Correo electrónico" required />
+      <textarea rows="4" placeholder="Escribe tu mensaje aquí" aria-label="Mensaje" required></textarea>
       <button type="submit">Enviar mensaje</button>
     </form>
   </section>
@@ -264,11 +260,16 @@
   <script src="script/script.js"></script>
   <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "CRIQL",
-    "url": "https://jms-dev-bit.github.io/Colegio/"
-    "description": "Plataforma dedicada a la institucion CRIQL."
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "CRIQL - Colegio Regional de Ingenieros Químicos del Litoral",
+      "url": "https://jms-dev-bit.github.io/Colegio/",
+      "description": "Institución comprometida con el fortalecimiento de la ingeniería química en el litoral del Ecuador.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Guayaquil",
+        "addressCountry": "EC"
+      }
     }
   </script>
 </body>
